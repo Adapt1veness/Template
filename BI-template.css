@@ -1,0 +1,515 @@
+
+/* -------------------- Font styles ---------------------- */
+
+p {
+	font-family: Arial, Verdana, Sans-Serif;
+}
+
+.bold {
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+}
+
+
+.light {
+	font-family: Arial, Verdana, Sans-Serif;
+}
+
+.demilight {
+	font-family: Arial, Verdana, Sans-Serif;
+}
+
+.verdana {
+	font-family: Arial, Verdana, Sans-Serif;
+}
+
+/*--------------- Main header settings ------------------*/
+.page-header {
+    border-bottom: solid #10069F 2px;
+    vertical-align: bottom;
+    padding: 1vh 0 0.5vh 0;
+    position: fixed;
+    top: 50px;
+    width: 98vw;
+    height: 30px;
+}
+.page-header:hover {
+	z-index: 1 !important;
+}
+
+/* Small display size */
+@media screen and (max-height: 768px) {
+  .page-header {
+      height: 20px;
+      width: 95vw; 
+    }
+}
+.page-header * {
+    display: inline;
+}
+.page-header li {
+    margin: 1.2vh;
+    font-size: 1.5vh;
+    font-weight: bold;
+}
+.page-header li.active {
+    color: #8031A7 !important;
+}
+.page-header a:hover { 
+	text-decoration: none !important; 
+	color:#8031A7 !important;
+}
+/* Header title */
+.header-title {
+    background:-moz-linear-gradient(30deg, #10069F 0%, #0380D0 80%); 
+	background: -webkit-linear-gradient(30deg, #10069F 0%, #0380D0 80%); 
+	background: linear-gradient(30deg, #10069F 0%, #0380D0 80%);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color:transparent;
+	font-family: Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 2vh;
+	margin-left: 6em;
+	margin-top:1.5vh;
+}
+/* top left logo */
+
+.logo {
+    width: 7vh;
+    border: 0;
+    position: absolute;
+    top: 6px;
+    left: 0.5em;
+}
+/* Small display size */
+@media screen and (max-height: 768px) {
+.logo {
+    top: 4px;
+   }
+}
+
+
+/* Reset buttons  */
+.reset {
+  	background:-moz-linear-gradient(70deg, #1c1d1f 0%, #0099ff 40%); 
+	background: -webkit-linear-gradient(70deg, #00429f 0%, #0099ff 40%); 
+	background: linear-gradient(70deg, #00429f 0%, #0099ff 40%);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color:transparent;
+	font-family:Verdana, Sans-Serif;
+	font-weight: bold;
+	font-size: 1.2vh;
+	position: absolute;
+	top: 1.5vh;
+	right: 13em;
+}
+
+/*--------------- sub header settings ------------------*/
+.sub-header {
+    vertical-align: top;
+    padding: 1vh 0 0.5vh 0;
+    position: fixed;
+    top: 100px;
+    width: 98vw;
+    height: 30px;
+    text-align: center;
+}
+/* Small display size */
+@media screen and (max-height: 768px) {
+  .sub-header {
+      height: 20px;
+      width: 95vw;
+	  top: 80px;
+	  text-align: left;
+    }
+}
+.sub-header * {
+    display: inline;
+}
+.sub-header li {
+    margin: 1.2vh;
+    font-size: 1.2vh;
+}
+
+.sf-element-dropdown {
+	display: block;
+	z-index: 9999999;
+}
+
+/* ---------------------- Button styles ---------------------- */
+
+/* Build in Spotfire button */
+.sfc-action-button {
+    color:#fff!important;
+    background:linear-gradient(30deg, #1008A0 0%, #0091f2 90%)!important;
+    background-color:#e37222!important;
+    font-family: Segoe UI Semibold, Verdana, Sans-Serif!important;
+    border: 0px #fff solid !important;
+    border-radius: 9px !important;
+  /*padding-left: 16px !important;
+    padding-right: 16px !important;
+    height: 20px !important;
+    padding:9px 23px !important; */
+	text-shadow:0px 1px 0px #263666 !important;
+	padding:3px 10px !important;
+
+	
+}
+.sfc-action-button:hover {
+    background:linear-gradient(to bottom, #0099ff 5%, #1008A0 100%)!important;
+    background-color:#0099ff!important;
+    text-decoration:none!important;
+}
+
+/*   Button big size blue */
+div.button-big a{
+	box-shadow: -1px 6px 7px -6px #6b6b6b;
+	background:linear-gradient(to bottom, #00429f 5%, #0099ff 100%);
+	background-color:#00429f;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff !important;
+	font-family: Segoe UI Semibold, Sans-Serif !important;
+	font-size:15px;
+	padding:13px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+div.button-big a:hover{
+	background:linear-gradient(to bottom, #0099ff 5%, #00429f 100%);
+	background-color:#0099ff;
+	text-decoration:none;
+}
+/*   Button medium size blue */
+div.button-medium a{
+	box-shadow: -1px 6px 7px -6px #6b6b6b;
+	background:linear-gradient(to bottom right, #10069F, #00A1DF);
+	background-color:#00429f;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff !important;
+	font-family: Segoe UI Semibold, Verdana, Sans-Serif;
+	font-size:13px;
+	padding:8px 15px;
+	text-decoration:none;
+}
+
+div.button-medium a:hover{
+	background:linear-gradient(to bottom left, #D21C98, #872FA5);
+	background-color:#0099ff;
+	text-decoration:none;
+}
+
+/* Button small size blue */
+.button-small a{
+	background: linear-gradient(30deg, #00429f 0%, #0099ff 90%);
+	background-color:#e37222;
+	border-radius:20px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff !important;
+	font-family: Segoe UI Semibold, Verdana, Sans-Serif;
+	font-size:11px;
+	padding:5px 12px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #6b6b6b;
+}
+.button-small a:hover{
+	background:linear-gradient(to bottom left,  #D21C98, #872FA5);
+	background-color:#ff0033;
+	text-decoration:none;
+}
+
+/* Button medium size purple */
+div.button-purple-medium a{
+	box-shadow: -1px 6px 7px -6px #6b6b6b;
+	background:linear-gradient(to bottom left,  #D21C98, #872FA5);
+	background-color:#e37222;
+	border-radius:20px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff !important;
+	font-family: Segoe UI Semibold, Verdana, Sans-Serif;
+	font-size:13px;
+	padding:12px 21px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #6b6b6b;
+}
+div.button-purple-medium a:hover{
+	background:linear-gradient(to bottom left,  #10069F, #00A1DF);
+	background-color:#ff0033;
+	text-decoration:none;
+}
+
+/* Button small size orange */
+.button-orange-small a{
+	background:linear-gradient(to bottom, #ff0033 5%, #e37222 100%);
+	background-color:#e37222;
+	border-radius:20px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff !important;
+	font-family: Segoe UI Semibold, Verdana, Sans-Serif;
+	font-size:13px;
+	padding:5px 12px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #6b6b6b;
+}
+.button-orange-small a:hover{
+	background: linear-gradient(30deg, #00429f 0%, #0091f2 90%);
+	background-color:#ff0033;
+	text-decoration:none;
+}
+/*   Responsive Menu Buttons landing page */
+.button-landingpage a{
+	background:linear-gradient(to bottom left,  #10069F, #00A1DF) !important;
+	background-color:#00429f!important;
+	font-size: 1.5vh!important;
+	font-family: Segoe UI Semibold, Sans-Serif !important;
+	color:#ffffff !important;
+	height: 4vh !important;
+	text-align: center !important;
+	border-radius:3vw !important;
+	box-shadow: -1px 6px 7px -6px #6b6b6b !important;
+	cursor:pointer !important;
+	display: inline-flex !important;
+	align-items: center !important; 
+	justify-content: space-around !important;
+	text-decoration:none !important;
+	padding: 0 30px !important;
+}
+.button-landingpage a:hover {
+	background:linear-gradient(to bottom left,  #D21C98, #872FA5) !important;
+	background-color:#0099ff !important;
+	text-decoration:none !important;
+}
+/* ------------------- Landing Page CSS -------------------------- */
+#outer {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#header {
+	width: 100%;
+	height: 7%;
+}
+#inner {
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	left: 5%;
+
+}
+.scm-bi {
+    color: #003145;
+    font-size: 2.5vh;
+    font-weight: bold;
+    position: absolute;
+    top: 0.5vh;
+    left: 5.8vw;
+    font-family: Segoe UI, Verdana, Sans-Serif;
+}
+.left {
+	float: left;
+	width: 40%;
+	height: 100%;
+
+}
+.right {
+	float: right;
+	width: 60%;
+	height: 100%;
+}
+.body {
+	padding: 4vw 5vw 0vw 1vw;
+}
+.landingpage-menu {
+    position: absolute;
+    top: 0.5vh;
+    right: 7.8vw;
+}
+.landing-page-logo {
+    width: 8vh;
+    border: 0;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+}
+.landing-page-title{   
+    background:-moz-linear-gradient(to bottom left,  #10069F, #0294DA); 
+    background: -webkit-linear-gradient(to bottom left,  #10069F, #0294DA); 
+    background: linear-gradient(to bottom left,  #10069F, #0294DA);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-family: Segoe UI, Verdana, Sans-Serif;
+    font-weight: bold;
+    font-size: 3.2vh;
+}
+.plane {
+    width: 100vh;
+    border: 0;
+    position: absolute;
+    bottom: 15px;
+    right: 0.8em;
+}
+
+/* ------------------- Titles and general CSS -------------------- */
+.gradient{   
+    background:-moz-linear-gradient(to bottom, #00429f 5%, #0099ff 100%);
+    background: -webkit-linear-gradient(to bottom, #00429f 5%, #0099ff 100%);
+    background:linear-gradient(to bottom, #00429f 5%, #0099ff 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    background: linear-gradient(30deg, #10069F 0%, #0380D0 80%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-family:Verdana, Sans-Serif;
+    font-weight: bold;
+}
+.title .fa {
+    display: inline;
+}
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+ul {
+    list-style-type: none;
+	padding-left: 4.5em;
+	padding-right: 0em;
+	margin-right: 9em;
+}
+
+/* ------------------------- Popup Styles ----------------------*/
+
+/* When adding a new popup style, also add the class to the 'popup' Javascript */
+
+/* Popup style 1 */
+.spotfire-popup-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99999 !important;
+}
+.spotfire-popup {
+  margin: 40px auto;
+  padding: 20px;
+  top: 20em;
+  background:linear-gradient(to top right,  #5C1AA6, #1C24DD);
+  border-radius: 5px;
+  width: 50%;
+  position: relative !important;
+  z-index: 99999 !important;
+}
+.spotfire-popup .spotfire-popup-close {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff !important;
+}
+.spotfire-popup .spotfire-popup-close:hover {
+  color: #222;
+}
+.spotfire-popup .spotfire-popup-content {
+  max-height: 30%;
+  overflow: auto;
+  color: #fff !important;
+}
+/* Popup style 2 */
+.spotfire-popup-overlay2 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99999 !important;
+}
+.spotfire-popup2 {
+  margin: 40px auto;
+  padding: 20px;
+  background:linear-gradient(30deg, #00429f 0%, #0099ff 90%);
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  z-index: 99999 !important;
+}
+.spotfire-popup2 .spotfire-popup-close2 {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff !important;
+}
+.spotfire-popup2 .spotfire-popup-close2:hover {
+  color: #222;
+}
+.spotfire-popup2 .spotfire-popup-content2 {
+  max-height: 30%;
+  overflow: auto;
+  color: #fff;
+}
+/* Popup style 3 */
+.spotfire-popup-overlay3 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99999 !important;
+}
+.spotfire-popup3 {
+   margin: 40px auto;
+  padding: 20px;
+  top: 20em;
+  background: #D9D9D9;
+  opacity: 1;
+  border-radius: 5px;
+  width: 55%;
+  position: relative;
+  z-index: 99999 !important;
+}
+.spotfire-popup3 .spotfire-popup-close3 {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff !important;
+}
+.spotfire-popup3 .spotfire-popup-close3:hover {
+  color: #222;
+}
+.spotfire-popup3 .spotfire-popup-content3 {
+  max-height: 30%;
+  overflow: auto;
+  color: #013046;
+}
